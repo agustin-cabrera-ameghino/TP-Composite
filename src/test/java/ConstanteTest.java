@@ -13,4 +13,15 @@ public class ConstanteTest {
         Assert.assertEquals(2,dos.evaluar(),0);
         Assert.assertEquals(5,cinco.evaluar(),0);
     }
+
+    @Test
+    public void Suma(){
+        Constante cinco = new Constante(5);
+        Constante tres = new Constante(3);
+
+        Expresion sumarValores = new Suma(cinco, tres);
+        Expresion sumarNuevosValores = new Suma(sumarValores, tres);
+
+        Assert.assertEquals();
+    }
 }
